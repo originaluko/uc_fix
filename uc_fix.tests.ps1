@@ -8,8 +8,10 @@
 # attention: make sure the script only contains function definitions
 # and no active code. The entire script will be executed to load
 # all functions into memory
-. ($PSCommandPath -replace '\.ps1$', '.ps1')
+#. ($PSCommandPath -replace '\.tests\.ps1$', '.ps1')
 #endregion
+
+Import-Module .\uc_fix.psm1
 
 # describes the function Get-LRO
 Describe 'Get-LRO' {
