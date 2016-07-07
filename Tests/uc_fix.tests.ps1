@@ -8,7 +8,7 @@
 # attention: make sure the script only contains function definitions
 # and no active code. The entire script will be executed to load
 # all functions into memory
-. ($PSCommandPath -replace '\.tests\.ps1$', '.ps1')
+. ($PSCommandPath -replace '\.ps1$', '.ps1')
 #endregion
 
 # describes the function Get-LRO
