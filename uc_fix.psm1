@@ -37,7 +37,7 @@
 		[string[]]$Name
     )
 
-    Get-vmHost $Name | Get-AdvancedSetting -name Net.VmxnetSwLROSL, Net.Vmxnet3SwLRO, Net.Vmxnet3HwLRO, Net.Vmxnet2SwLRO, Net.Vmxnet2HwLRO | Format-Table Entity, Name, Value
+    Get-vmHost $Name | Get-AdvancedSetting -name Net.VmxnetSwLROSL, Net.Vmxnet3SwLRO, Net.Vmxnet3HwLRO, Net.Vmxnet2SwLRO, Net.Vmxnet2HwLRO  | Format-Table Entity, Name, Value
 
 }
 
