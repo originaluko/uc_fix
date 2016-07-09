@@ -1,6 +1,6 @@
 ﻿$here = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-$Module = '.\uc_fix.psm1'
+$Module = '.\uc_fix'
 
 Import-Module $Module
    
@@ -8,7 +8,11 @@ Import-Module $Module
 Describe 'Get-LRO' {
 
     It "Has a manifest file" {
-        "$here\.\$Module" | should Exist 
+        "$here\.\$Module.psd1" | should Exist 
+    }
+    
+    It "Has a module file" {
+        "$here\.\$Module.psm1" | should Exist 
     }
 
 }
