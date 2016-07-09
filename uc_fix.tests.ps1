@@ -2,7 +2,7 @@
 
 $Module = '.\uc_fix'
 
-Import-Module $Module
+Import-Module "$Module.psm1"
    
 # describes the function Get-LRO
 Describe 'uc_fix Module' {
